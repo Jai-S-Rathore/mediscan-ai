@@ -556,6 +556,7 @@ export default function App() {
         </div>
         <p style={c.footerSub}>
           Amazon Bedrock · Nova Vision · Nova Text · Amazon Polly · OpenStreetMap
+          <p>© 2026 MediScan AI Jai Singh Rathore. All Rights Reserved.</p>
         </p>
       </footer>
     </div>

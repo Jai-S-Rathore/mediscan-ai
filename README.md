@@ -18,7 +18,7 @@ with voice output.
 - 🌍 30 languages supported
 - 🔊 Voice output — Amazon Polly
 - 📍 Auto location detection — UI switches to native language
-- 🦮 Accessibility for rural & visually impaired users
+-  Accessibility for rural & visually impaired users
 # ⚕ MediScan AI
 ### AI-Powered Medicine Recognition & Safety Assistant
 
