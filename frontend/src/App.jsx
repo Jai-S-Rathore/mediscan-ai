@@ -258,7 +258,7 @@ export default function App() {
       const fd = new FormData();
       fd.append("file", image);
       fd.append("language", language);
-      const res = await axios.post("http://127.0.0.1:8000/analyze", fd);
+      const res = await axios.post("https://mediscan-backend-ufpk.onrender.com/analyze", fd);
       setResult(res.data);
       setActiveStep(3);
     } catch {
@@ -279,7 +279,7 @@ export default function App() {
         fd.append("text", result.details);
         fd.append("language", language);
       }
-      const res = await axios.post("http://127.0.0.1:8000/speak", fd, { responseType: "blob" });
+      const res = await axios.post("https://mediscan-backend-ufpk.onrender.com/speak", fd, { responseType: "blob" });
       setAudioUrl(URL.createObjectURL(new Blob([res.data], { type: "audio/mpeg" })));
     } catch {
       setError("Audio generation failed.");
