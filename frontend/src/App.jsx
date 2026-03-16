@@ -328,9 +328,9 @@ export default function App() {
           <span style={c.logoText}>MediScan <span style={c.logoGreen}>AI</span></span>
         </div>
         <div style={c.topBarRight}>
-          <span style={c.awsChip}>🟠 Bedrock</span>
+          {/* <span style={c.awsChip}>🟠 Bedrock</span>
           <span style={c.awsChip}>🔵 Nova</span>
-          <span style={c.awsChip}>🟢 Polly</span>
+          <span style={c.awsChip}>🟢 Polly</span> */}
         </div>
       </div>
 
