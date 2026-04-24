@@ -279,7 +279,7 @@ export default function App() {
         fd.append("text", result.details);
         fd.append("language", language);
       }
-      const res = await axios.post("https://mediscan-ai-production-e2f1.up.railway.app/speak", fd, { responseType: "blob" });
+      const res = await axios.post("https://mediscan-ai-5ozx.onrender.com", fd, { responseType: "blob" });
       setAudioUrl(URL.createObjectURL(new Blob([res.data], { type: "audio/mpeg" })));
     } catch {
       setError("Audio generation failed.");
