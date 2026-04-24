@@ -258,7 +258,7 @@ export default function App() {
       const fd = new FormData();
       fd.append("file", image);
       fd.append("language", language);
-      const res = await axios.post("https://mediscan-ai-production-e2f1.up.railway.app/analyze", fd);
+      const res = await axios.post("https://mediscan-ai-5ozx.onrender.com/analyze", fd);
       setResult(res.data);
       setActiveStep(3);
     } catch {
