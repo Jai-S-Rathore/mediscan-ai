@@ -251,7 +251,9 @@ export default function App() {
           } else {
             setLocationMsg(state || country);
           }
-        } catch {}
+        } catch {
+
+        }
         setDetecting(false);
       },
       () => setDetecting(false)
@@ -362,11 +364,11 @@ export default function App() {
             <div style={{ width: 32, height: 32, background: "#0f3c32", borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
               <span style={{ color: "#f5f0e8", fontSize: 16 }}>⚕</span>
             </div>
-            <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: "#0f3c32" }}>MediScan</span>
+            <span style={{ fontFamily: "'Playfair Display', serif", fontSize: 20, fontWeight: 700, color: "#0f3c32" }}>CheckMed</span>
             <span style={{ fontFamily: "'DM Mono', monospace", fontSize: 11, color: "#8a7a60", letterSpacing: 2, marginTop: 2 }}>AI</span>
           </div>
           <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
-            {["Bedrock", "Nova", "Polly"].map(t => (
+            {["", "", ""].map(t => (
               <span key={t} style={{ fontFamily: "'DM Mono', monospace", fontSize: 10, letterSpacing: 1.5, color: "#8a7a60", padding: "3px 10px", border: "1px solid rgba(15,60,50,0.15)", borderRadius: 20, textTransform: "uppercase" }}>{t}</span>
             ))}
           </div>
